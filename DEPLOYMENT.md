@@ -9,16 +9,48 @@ This guide provides the full pipeline for building and distributing **PSArbor** 
 Before building for production, ensure your development environment is fully prepared:
 
 ### 1. Rust Toolchain (v1.77+)
-The backend requires a modern stable Rust.
-```bash
-rustup update stable
-```
+The backend requires a modern stable Rust. You can install it using one of the following methods:
+
+#### Option A: Using `rustup` (Recommended)
+This is the official toolchain manager for Rust. It allows you to easily switch between stable, beta, and nightly versions.
+
+*   **Install with `curl`:**
+    ```bash
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    ```
+*   **To update:**
+    ```bash
+    rustup update stable
+    ```
+
+#### Option B: Using Homebrew
+If you prefer managing your system packages with Homebrew, you can install Rust directly.
+
+*   **Install with `brew`:**
+    ```bash
+    brew install rust
+    ```
+*   **To update:**
+    ```bash
+    brew upgrade rust
+    ```
+
+> [!CAUTION]
+> Avoid having both **Homebrew** and **rustup** versions installed simultaneously, as this can lead to version conflicts in your PATH. If switching, uninstall the other method first.
+
+
 
 ### 2. Node.js (v18+)
-The Next.js frontend requires Node. Ensure your dependencies are up to date:
+PSArbor requires Node.js dependencies in both the root (for the Tauri CLI) and the `frontend/` directory (for Next.js). Ensure both are installed:
+
 ```bash
+# Install Tauri CLI & project dependencies (Root)
+npm install
+
+# Install Frontend dependencies
 cd frontend && npm install && cd ..
 ```
+
 
 ### 3. System Dependencies (Linux Only)
 If building on Linux (Debian/Ubuntu), ensure webkit and other libraries are installed:

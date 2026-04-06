@@ -74,11 +74,12 @@ export default function MenuBar({
       <div className="flex items-center gap-3">
         {/* Logo & Search */}
         <div className={cn("flex items-center gap-2 pl-2 pr-4 border-r", isDark ? "border-white/5" : "border-slate-200")}>
-          <div className="w-8 h-8 bg-purple-600 rounded-xl flex items-center justify-center shadow-lg transform rotate-3">
-            <CmdIcon className="text-white w-5 h-5" />
+          <div className="w-8 h-8 rounded-xl flex items-center justify-center shadow-lg transform rotate-3 overflow-hidden">
+            <img src="/icon.png" alt="PSArbor Icon" className="w-full h-full object-cover" />
           </div>
           <span className={cn("hidden lg:block text-sm font-bold tracking-tight pr-2", isDark ? "text-white" : "text-slate-900")}>PSArbor</span>
         </div>
+
 
         <div className="relative group">
           <Search className={cn("absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 transition-colors", isDark ? "text-zinc-500 group-focus-within:text-purple-500" : "text-slate-400 group-focus-within:text-purple-600")} />
