@@ -1,0 +1,56 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+frontend/package-lock.json
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/.open-next/
+
+# Rust / Tauri
+src-tauri/target/
+src-tauri/node_modules/
+src-tauri/gen/
+src-tauri/bin/
+
+# OS Specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment / Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDEs & Tools
+.vscode/
+.idea/
+# AI Tools
+.gemini/
+.antigravity/
+.ai/
+.cursorrules
+.windsurfrules
+CLAUDE.md
+AGENTS.md
+AI.md
+.anthropic/
+*.swp
+*.swo
+
+# Project specific
+dist/
+build/
+*.bak
+*.tmp
