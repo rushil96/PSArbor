@@ -1,51 +1,44 @@
-# 🚀 PSArbor
-
-### **High-Performance, Glassmorphic System Monitor with Intuitive Forest View Hierarchy**
-
-PSArbor is a professional-grade process manager for **macOS** and **Linux**, designed for users who need deep visibility into their system's anatomy. Powered by **Tauri 2.0**, **Rust**, and **Next.js**, it combines native speed with a fluid, hardware-accelerated UI.
-
-![PSArbor Glassmorphic Icon](src-tauri/icons/icon.png)
+# 🌳 PSArbor - Lightweight process visualizer for macOS and Ubuntu servers
 
 ---
 
-## ✨ Key Features
+## 🚀 Overview
 
-*   **💎 Glassmorphic Aesthetics**: A high-contrast, premium interface that feels at home on modern OSes.
-*   **🌳 Forest View (Tree Mode)**: Intuitively visualize process hierarchies and parent-child relationships.
-*   **🔍 Deep Inspector**: Drill down into command-line arguments, environment variables, working directories, and live file/network handles.
-*   **🛡️ Security Audit**: Instant links to VirusTotal and Google Research for any suspicious process.
-*   **⚡ Performance Mode**: Toggle sparklines and animations for ultra-low resource monitoring on high-load systems.
-*   **📊 Hardware Health**: Monitor CPU temperatures, disk throughput, and network activity in real-time.
-*   **📥 Professional Exports**: Snapshot your process list and export to high-fidelity CSV for forensic analysis.
+PSArbor is a process visualizer for macOS and Ubuntu. It uses a "Forest View" to show process hierarchies and is built with **Rust**, **Tauri**, and **Next.js** for high performance.
+
+## ✨ Features
+
+*   **🌳 Forest View**: Hierarchical parent-child process visualization.
+*   **🔍 Process Inspector**: View command-line arguments, environment variables, and file paths.
+*   **📊 GUI lsof**: View open file handles and network sockets without running any CLI commands.
+*   **📈 Resource Monitoring**: Real-time tracking of RAM and CPU usage per process.
+*   **🛡️ Security Check**: Instant reputation lookups on VirusTotal and Google.
+*   **🌡️ Hardware Metrics**: Monitor CPU temperatures, disk throughput, and network activity.
+*   **⚡ Lightweight**: Built with Rust and Tauri for high performance and low resource footprint.
+*   **🎨 Glassmorphic UI**: Hardware-accelerated, modern interface.
+*   **📥 CSV Export**: Export process lists for external analysis.
 
 ---
 
-## 🛠️ Quick Start (Development)
+## 🛠️ Quick Start
 
 ### Prerequisites
 *   **Node.js** (v18+)
 *   **Rust** (v1.77+ via [rustup](https://rustup.rs/))
-*   **Tauri Dependencies**: Follow the [Tauri setup guide](https://tauri.app/start/prerequisites/) for your OS.
+*   **Tauri Dependencies**: [Setup Guide](https://tauri.app/start/prerequisites/)
 
-### Installation
+### Installation & Run
 ```bash
-git clone https://github.com/<your-github-username>/psarbor.git
-cd psarbor
+# Clone the repository
+git clone https://github.com/rushil96/PSArbor.git
+cd PSArbor
+
+# Install dependencies
 npm install
+
+# Start in development mode
+npm run tauri dev
 ```
-
-### Run in Development
-```bash
-npx tauri dev
-```
-
----
-
-## 🏗️ Production Deployment
-
-Ready to distribute? We support **DMG** and **App** bundles for macOS, and **Deb** or **AppImage** for Linux.
-
-For detailed production build instructions, see our [**Deployment Guide (DEPLOYMENT.md)**](DEPLOYMENT.md).
 
 ---
 
@@ -53,4 +46,4 @@ For detailed production build instructions, see our [**Deployment Guide (DEPLOYM
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-*Built with ❤️ using Tauri & Next.js*
+*Built with ❤️ for the community using Tauri & Next.js*
